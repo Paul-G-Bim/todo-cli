@@ -10,7 +10,7 @@ while True:
         with open("todos.txt", "w") as file:
             file.writelines(todos)
 
-    if 'show' in user_action:
+    elif 'show' in user_action:
         with open("todos.txt", "r") as file:
             todos = file.readlines()
         [print(f"{index + 1}- {todo.strip('\n')}") for index, todo in enumerate(todos)]
