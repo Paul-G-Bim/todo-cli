@@ -1,10 +1,10 @@
-def get_todos():
-    with open("todos.txt", "r") as file_local:
+def get_todos(file_path='todos.txt'):
+    with open(file_path, "r") as file_local:
         todos_local = file_local.readlines()
     return todos_local
 
-def store_todos(todos_local):
-    with open("todos.txt", "w") as file_local:
+def store_todos(todos_local, file_path='todos.txt'):
+    with open(file_path, "w") as file_local:
         file_local.writelines(todos_local)
 
 
