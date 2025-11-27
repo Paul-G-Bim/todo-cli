@@ -1,1 +1,1 @@
-Explore various python concepts by building a todo app for a command line interface.
+Explore various python concepts by building a todo app with a command line interface.
