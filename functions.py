@@ -9,3 +9,8 @@ def store_todos(todos_local, file_path='todos.txt'):
     """Stores the todos in the file"""
     with open(file_path, "w") as file_local:
         file_local.writelines(todos_local)
+
+
+if __name__ == "__main__":
+    # test function
+    print(get_todos())
